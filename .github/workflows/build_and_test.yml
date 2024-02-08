@@ -5,13 +5,13 @@ on:
 
 jobs:
   build_and_test:
-    runs: ubuntu-latest
+    runs-on: ubuntu-latest
     steps:
         - uses: actions/checkout@v4
         - name: setup
           uses: actions/setup-python@v3
           with:
-          python-version: 3.11
+            python-version: 3.11
 
         - name: install
           run:
